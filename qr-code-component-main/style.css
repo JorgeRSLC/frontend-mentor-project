@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #d5e1ef;
+}
+
+.shell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    background-color: white;
+
+    width: 40%;
+    height: 60%;
+}
+
+.pic {
+  width: 100%;
+  height: 55%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
