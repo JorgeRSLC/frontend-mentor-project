@@ -1,0 +1,67 @@
+* {
+    margin: 0;   
+    padding: 0;  
+    box-sizing: border-box;  
+    }
+
+body {
+    width: 1440px;
+    padding: 70px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    flex-wrap:wrap;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid blue;
+    max-width: 375px;
+}
+
+.score {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid green;
+}
+
+.left {
+    gap: 15px;
+    padding: 20px;
+}
+
+.score p {
+    text-align: center;
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*   
+Notes from https://blog.hubspot.com/website/css-border-radius-circle
+for circle around text
+    .center {
+  background: #FF7A59;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+} */
