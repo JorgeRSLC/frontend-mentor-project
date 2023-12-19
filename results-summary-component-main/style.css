@@ -7,6 +7,9 @@
 body {
     width: 1440px;
     padding: 70px;
+    font-family: "Hanken Grotesk";
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .row {
@@ -27,6 +30,21 @@ body {
     width: 400px;
     height: 500px; /* ?? */
     padding: 20px;
+}
+
+.column-title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.total-score {
+    font-size: 72px;
+    font-weight: 800;
+}
+
+.outcome-title {
+    font-size: 32px;
+    font-weight: 800;
 }
 
 .score {
@@ -74,6 +92,15 @@ body {
 
 .category {
     display: flex;
+}
+
+.button {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.summary {
+    font-weight: 800;
 }
 
 
