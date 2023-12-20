@@ -80,6 +80,14 @@ body {
 }
 
 .group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: initial;
+    border: 1px solid blue;
+    padding: 20px;
+    gap: 20px;
     width: 100%;
 }
 
@@ -88,6 +96,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    border: 1px solid red;
+    border-radius: 20%;
+    padding: 15px 30px;
 }
 
 .category {
@@ -97,6 +108,7 @@ body {
 .button {
     font-size: 18px;
     font-weight: 500;
+    max-width: 100%;
 }
 
 .summary {
