@@ -16,7 +16,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     flex-wrap:wrap;
 }
 
@@ -26,7 +25,6 @@ body {
     align-items: center;
     flex-direction: column;
     flex: initial;
-    border: 1px solid blue;
     width: 368px;
     height: 512px; /* ?? */
     border-radius: 32px;
@@ -40,6 +38,11 @@ body {
     font-size: 24px;
     font-weight: 800;
 
+}
+
+.left {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
 }
 
 .right .column-title {
@@ -65,7 +68,7 @@ body {
     text-align: center;
     flex-direction: column;
     justify-content: space-around;
-    border: 1px solid green;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 
 .result-statement {
@@ -77,10 +80,6 @@ body {
     height: 134px;
     text-align: center;
     gap: 15px
-}
-
-.score p {
-    text-align: center;
 }
 
 .attribution{
@@ -106,22 +105,78 @@ body {
     height: 56px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 15px;
-    padding: 15px 30px;
+    padding: 15px 20px;
     font-weight: 800;
 }
 
 .category {
     display: flex;
+    gap: 10px;
+}
+
+#reaction {
+    background-color: hsla(0, 100%, 67%, .15);
+    color: hsla(0, 100%, 67%, 1);
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, .15);
+    color: hsla(39, 100%, 56%, 1)
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, .15);
+    color: hsla(166, 100%, 37%, 1);
+}
+
+#visual {
+    background-color: hsla(234, 85%, 45%, .15);
+    color: hsla(234, 85%, 45%, 1);
+}
+
+.scores {
+    color: hsl(224, 30%, 27%)
+}
+
+.denominator {
+    color: hsla(224, 30%, 27%, .5)
 }
 
 .button {
-    font-size: 18px;
-    font-weight: 500;
-    max-width: 100%;
+  background-color: hsla(224, 30%, 27%, 1);
+  border-radius: 128px;
+  border-style: none;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  /* display: inline-block; */
+  font-family: "Hanken Grotesk";
+  font-size: 18px;
+  font-weight: 500;
+  height: 56px;
+  width: 288px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
+
+.button:hover,
+.button:focus {
+  background-color: hsl(241, 81%, 54%);
+}
 
 
 
