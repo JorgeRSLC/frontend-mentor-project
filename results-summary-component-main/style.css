@@ -5,11 +5,16 @@
     }
 
 body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     width: 1440px;
     padding: 70px;
     font-family: "Hanken Grotesk";
     font-weight: 500;
     font-size: 18px;
+    gap: 30px;
 }
 
 .row {
@@ -17,6 +22,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap:wrap;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 32px;
 }
 
 .column {
@@ -37,7 +44,7 @@ body {
     align-items: center;
     font-size: 24px;
     font-weight: 800;
-
+    width: 288px
 }
 
 .left {
@@ -46,7 +53,8 @@ body {
 }
 
 .right .column-title {
-    align-self: start;
+    flex-direction: column;
+    align-items: self-start;
 }
 
 .total-score {
@@ -176,6 +184,11 @@ body {
 .button:hover,
 .button:focus {
   background-color: hsl(241, 81%, 54%);
+}
+
+.left .column-title,
+.outcome-content {
+    color: hsl(0, 0%, 75%)
 }
 
 
