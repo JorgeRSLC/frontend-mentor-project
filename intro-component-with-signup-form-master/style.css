@@ -14,7 +14,7 @@ html {
 .container-2 {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly;  */
+    justify-content: space-between; 
     align-items: center;
     text-align: center;
 }
@@ -24,6 +24,9 @@ html {
     position: relative;
     width: 375px;
     height: 1000px;
+    border: 1px solid blue;
+    padding-top: 50px;
+    padding-bottom: 60px;
 }
 
 .container-bg {
@@ -31,6 +34,8 @@ html {
     width: 100%;
     height: auto;
     position: absolute;
+    margin-top: -50px;
+    margin-bottom: -60px;
 }
 
 .container-1, .container-2 {
@@ -40,8 +45,34 @@ html {
 
 .container-1 {
     height: 226px;
+    border: 1px solid black;    
+}
+.container-2 {
+    border: 1px solid green;
+    height: 554px;
 }
 
+.header, .description {
+    width: 100%;
+    
+}
+.header {
+    height: 80px;
+}
+.description {
+    height: 130px;
+}
+.promo {
+    height: 88px;
+    text-align: center;
+}
+.promo-copy{
+    width: 194px;
+    height: 52px;
+}
+.inputs {
+    height: 442px;
+}
 .input-item {
     display: flex;
     flex: 1;
