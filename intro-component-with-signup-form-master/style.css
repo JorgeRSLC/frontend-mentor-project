@@ -15,9 +15,10 @@ html {
 .inputs {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    /* justify-content: space-between;  */
     align-items: center;
     text-align: center;
+    gap: 70px;
 }
 
 .container {
@@ -26,20 +27,21 @@ html {
     width: 375px;
     height: 1000px;
     border: 1px solid blue;
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 30px;
 }
 
 .container-bg {
     background-color: hsl(0, 100%, 74%);
     width: 100%;
-    height: auto;
+    height: 100%;
     position: absolute;
-    margin-top: -50px;
-    margin-bottom: -60px;
+    margin-top: -80px;
+    margin-bottom: -30px;
 }
 
 .container-1, .container-2 {
+    justify-content: space-between;
     position: relative;
     width: 327px;
 }
@@ -80,19 +82,28 @@ html {
 .promo-copy{
     width: 194px;
     height: 52px;
+}
+
+.bolded {
     font-weight: 700;
 }
-.bolded {
-    font-weight: 1000;
-}
+
+
 .inputs {
+    background-color: white;
+    border: 1px solid black;
     height: 442px;
     width: 327px;
-    border: 1px solid black;
     padding: 30px;
-    gap: 10px;
-    background-color: white;
-    
+    gap: 10px; 
+}
+
+.fine-print{
+    font-size: 11px;
+}
+.red-bold{
+    color: red;
+    font-weight: 700;
 }
 
 .input-item {
@@ -105,4 +116,6 @@ html {
     background-color: hsl(154, 59%, 51%);
     color: white;
 }
+
+
 
